@@ -81,7 +81,7 @@ bonusEntriesText += `<@&${roleId}>: **+${count}** ${count === 1 ? 'entry' : 'ent
 }
 const embed = new EmbedBuilder()
 .setTitle(`🎁 ${prize} giveaway 🎁`)
-.setDescription(`→**Ends:** <t:${Math.floor(endTime / 1000)}:R>\n→**Winners:** ${winnerCount}${bonusEntriesText}\nReact with 🎉 to enter!`)
+.setDescription(`→**Ends:** <t:${Math.floor(endTime / 1000)}:R>\n→**Winners:** ${winnerCount}${bonusEntriesText}\n**Host**(the person whotes the giveaway)\nReact with 🎉 to enter the giveaway!`)
 .setColor('#00FF00')
 .setFooter({ text: `Hosted by ${message.author.tag}` })
 .setTimestamp(endTime);
